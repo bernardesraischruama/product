@@ -1,10 +1,9 @@
 <script setup>
-import {useCounterStore } from 
-const CounterStore = useCounterStore()
-<script>
+import {useCounterStore } from '@/stores/counter'
+const counterStore = useCounterStore()
+</script>
+
 <template>
-<div class
+    {{ counterStore.count }}
 </template>
 
-<style>
-</style>
